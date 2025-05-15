@@ -28,6 +28,9 @@ services:
       SPRING_SERVLET_MULTIPART_MAX_REQUEST_SIZE: 10MB
       APP_UPLOAD_DIR: /app/media/dishes
       APP_UPLOAD_URL_PREFIX: /media/dishes
+      SERVER_ADDRESS: 0.0.0.0
+      SERVER_FORWARD_HEADERS_STRATEGY: native
+      SERVER_USE_FORWARD_HEADERS: "true"
     ports:
       - '8080:8080'
     volumes:
